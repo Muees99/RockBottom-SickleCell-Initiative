@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { GiHeartBeats } from "react-icons/gi";
-// import Navbar from "@/components/Navs/Navbar";
+import Navbar from "@/components/Navs/Navbar";
+import CheckInternetLayout from "./CheckInternetLayout";
 // import Hero from "@/components/Hero";
 // import About from "@/components/About";
 // import Services from "@/components/Services";
@@ -45,14 +46,16 @@ export default function HomeLayout({
     );
   }
   return (
-    <>
-      {/* <Navbar/>
-      <Hero/>
+    <CheckInternetLayout>
+      <>
+        <Navbar />
+        {/* <Hero/>
       <About/>
       <Services/>
       <Reviews/>
       <News/>
       <Footer/> */}
-    </>
+      </>
+    </CheckInternetLayout>
   );
 }
