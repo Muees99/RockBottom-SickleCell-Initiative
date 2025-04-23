@@ -1,12 +1,20 @@
 @import "tailwindcss";
 
-
-
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-figtree), sans-serif;
+  /* Directly applying the custom font */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-outfit), sans-serif;
+  /* Directly applying the custom font */
 }
 
 @layer utilities {
@@ -15,10 +23,13 @@ body {
   }
 }
 
-/*  ======MISCELLANEOUS========= */
+.opacity-1 {
+  opacity: 1%;
+}
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+/* ======MISCELLANEOUS========= */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -33,25 +44,15 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #42454A;
+  background: #42454a;
   border-radius: 8px;
 }
 
 ::selection {
   color: white;
-  background: #42454A;
+  background: #42454a;
 }
 
 .no-scroll::-webkit-scrollbar {
   width: 0px;
 }
-
-/* @layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-} */

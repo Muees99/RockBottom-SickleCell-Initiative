@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { GiHeartBeats } from "react-icons/gi";
 import Navbar from "@/components/Navs/Navbar";
 import CheckInternetLayout from "./CheckInternetLayout";
+import HeroSection from "@/components/pageSection/home/HeroSection";
 // import Hero from "@/components/Hero";
 // import About from "@/components/About";
 // import Services from "@/components/Services";
@@ -11,7 +12,7 @@ import CheckInternetLayout from "./CheckInternetLayout";
 // import News from "@/components/News";
 
 export default function HomeLayout({
-  //   eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   children,
 }: {
   children: React.ReactNode;
@@ -49,7 +50,10 @@ export default function HomeLayout({
     <CheckInternetLayout>
       <>
         <Navbar />
+        {/* {children} */}
+        <HeroSection/>
         {/* <Hero/>
+        
       <About/>
       <Services/>
       <Reviews/>

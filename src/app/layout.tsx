@@ -14,13 +14,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={`${outfit.variable} ${figtree.variable} font-body antialiased`}
-      >
-        {children}
-      </body>
+    // <html lang="en">
+    //   <body
+    //     // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    //     className={`${outfit.variable} ${figtree.variable} font-body antialiased`}
+    //   >
+    //     {children}
+    //   </body>
+    // </html>
+    <html lang="en" className={`${outfit.variable} ${figtree.variable}`}>
+      <body className="font-figtree">{children}</body>
     </html>
   );
 }
