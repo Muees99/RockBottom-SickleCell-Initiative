@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,6 +12,7 @@ module.exports = {
         body: ["var(--font-outfit)", "sans-serif"],
         heading: ["var(--font-figtree)", "sans-serif"],
       },
+    
     },
   },
   plugins: [],
