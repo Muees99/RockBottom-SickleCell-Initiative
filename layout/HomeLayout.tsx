@@ -4,6 +4,8 @@ import { GiHeartBeats } from "react-icons/gi";
 import Navbar from "@/components/Navs/Navbar";
 import CheckInternetLayout from "./CheckInternetLayout";
 import HeroSection from "@/components/pageSection/home/HeroSection";
+import MissionSection from "@/components/pageSection/home/MissionSection";
+import ImpactSection from "@/components/pageSection/home/ImpactSection";
 // import Hero from "@/components/Hero";
 // import About from "@/components/About";
 // import Services from "@/components/Services";
@@ -51,7 +53,9 @@ export default function HomeLayout({
       <>
         <Navbar />
         {/* {children} */}
-        <HeroSection/>
+        <HeroSection />
+        <MissionSection/>
+        <ImpactSection/>
         {/* <Hero/>
         
       <About/>
