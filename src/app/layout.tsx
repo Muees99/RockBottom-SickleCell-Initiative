@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { outfit, figtree } from "./font";
 import "./globals.css";
+import GotoTop from "@/../Ui/GotoTop";
+import StateContextProvider from "@/../context/StateContext";
 
 export const metadata: Metadata = {
   title: "Rock Bottom Sickle Cell Initiative",
@@ -23,7 +25,12 @@ export default function RootLayout({
     //   </body>
     // </html>
     <html lang="en" className={`${outfit.variable} ${figtree.variable}`}>
-      <body className="font-figtree">{children}</body>
+      <body className="font-figtree">
+        <StateContextProvider>
+        {children}
+        <GotoTop />
+        </StateContextProvider>
+      </body>
     </html>
   );
 }

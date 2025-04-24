@@ -247,8 +247,19 @@ const HeroSection: React.FC = () => {
       </MaxWidthWrapper>
 
       {/* Mouse Icon placed lower */}
-      <div className="absolute bottom-5 left-0 right-0 flex justify-center">
+      {/* <div className="absolute bottom-5 left-0 right-0 flex justify-center">
         <PiMouseSimpleLight className="w-8 h-8 text-neutral-500" />
+      </div> */}
+      <div className="absolute bottom-5 left-0 right-0 flex justify-center">
+        <button
+          onClick={() => {
+            const section = document.getElementById("next-section");
+            section?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="animate-bounce"
+        >
+          <PiMouseSimpleLight className="w-8 h-8 text-neutral-500" />
+        </button>
       </div>
     </div>
   );
