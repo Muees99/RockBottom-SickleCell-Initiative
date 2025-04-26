@@ -94,7 +94,7 @@ function MissionSection() {
   return (
     <div id="mission-section">
       <section className="w-full py-16 overflow-hidden relative">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto lg:px-8 sm:px-[5%] px-[4%]">
           {/* Header Section */}
           <div className="rounded-lg border bg-[#2F7889] p-6 flex flex-col items-center text-white text-center">
             <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
@@ -123,7 +123,7 @@ function MissionSection() {
               </p>
             </div>
 
-            <div className="bg-[#EDF7D1] rounded-lg p-6">
+            <div className=" flex bg-[#EDF7D1] rounded-lg p-6">
               <p className="text-sm sm:text-base font-medium leading-relaxed text-gray-800">
                 Our mission is to empower individuals and families impacted by
                 sickle cell disease through comprehensive support, education,
