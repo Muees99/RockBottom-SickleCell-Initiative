@@ -6,9 +6,10 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 
 // Import your images
- import ImAwareness from "@/../public/assets/ImAwareness.png";
+import ImAwareness from "@/../public/assets/ImAwareness.png";
 import ImSupport from "@/../public/assets/ImSupport.png";
 import ImAcessCare from "@/../public/assets/ImAccessCare.png";
+import { PiMouseSimpleLight } from "react-icons/pi";
 
 // Impact items
 const impactItems = [
@@ -61,7 +62,7 @@ function ImpactSection() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
-              viewport={{once: true }}
+              viewport={{ once: true }}
               className="flex flex-col sm:flex-row items-center gap-8"
             >
               {idx % 2 === 0 ? (
@@ -122,6 +123,39 @@ function ImpactSection() {
                       Learn More
                       <IoIosArrowRoundForward className="ml-2 w-5 h-5" />
                     </button>
+                    {/* <div className="absolute bottom-6 left-0 right-0 flex justify-center pt-4">
+                    <button
+                      onClick={() => {
+                        const section =
+                          document.getElementById("@-section");
+                        section?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="animate-bounce"
+                    >
+                      <PiMouseSimpleLight className="w-8 h-8 sm:w-2 text-neutral-500" />
+                    </button>
+                  </div> */}
+                    <div className="absolute bottom-6 left-0 right-0 flex justify-center pt-4">
+                      <motion.button
+                        onClick={() => {
+                          const section =
+                            document.getElementById("impact-section"); // <-- make sure your ID is correct
+                          section?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/80 shadow-md backdrop-blur hover:bg-[#cdd8ae] transition-all duration-300"
+                        animate={{
+                          scale: [1, 1.1, 1],
+                          opacity: [1, 0.8, 1],
+                        }}
+                        transition={{
+                          repeat: Infinity,
+                          duration: 2,
+                          ease: "easeInOut",
+                        }}
+                      >
+                        <PiMouseSimpleLight className="w-6 h-6 sm:w-8 sm:h-8 text-neutral-600" />
+                      </motion.button>
+                    </div>
                   </div>
                 </>
               )}
