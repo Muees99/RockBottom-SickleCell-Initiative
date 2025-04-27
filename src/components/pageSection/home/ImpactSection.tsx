@@ -129,18 +129,6 @@ function ImpactSection() {
                       Learn More
                       <IoIosArrowRoundForward className="ml-2 w-5 h-5" />
                     </button>
-                    {/* <div className="absolute bottom-6 left-0 right-0 flex justify-center pt-4">
-                    <button
-                      onClick={() => {
-                        const section =
-                          document.getElementById("@-section");
-                        section?.scrollIntoView({ behavior: "smooth" });
-                      }}
-                      className="animate-bounce"
-                    >
-                      <PiMouseSimpleLight className="w-8 h-8 sm:w-2 text-neutral-500" />
-                    </button>
-                  </div> */}
                   </div>
                 </>
               )}
@@ -148,14 +136,6 @@ function ImpactSection() {
           ))}
         </div>
         {/* {MileStones Section} */}
-        {/* <div className="mt-20">
-          <div className=" flex flex-col justify-center items-center">
-            <h3>MILESTONES</h3>
-            <span>Boom</span>
-          </div>
-          <div></div>
-        </div> */}
-
         <div className="mt-20 w-full flex flex-col items-center">
           {/* Milestones Heading */}
           <motion.h3
