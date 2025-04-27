@@ -6,12 +6,8 @@ import CheckInternetLayout from "./CheckInternetLayout";
 import HeroSection from "@/components/pageSection/home/HeroSection";
 import MissionSection from "@/components/pageSection/home/MissionSection";
 import ImpactSection from "@/components/pageSection/home/ImpactSection";
-// import Hero from "@/components/Hero";
-// import About from "@/components/About";
-// import Services from "@/components/Services";
-// import Reviews from "@/components/Reviews";
-// import Footer from "@/components/Footer";
-// import News from "@/components/News";
+import TestimonialSection from "@/components/pageSection/TestimonialSection";
+import InviteSection from "@/components/pageSection/home/InviteSection";
 
 export default function HomeLayout({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -54,8 +50,10 @@ export default function HomeLayout({
         <Navbar />
         {/* {children} */}
         <HeroSection />
-        <MissionSection/>
-        <ImpactSection/>
+        <MissionSection />
+        <ImpactSection />
+        <TestimonialSection />
+        <InviteSection />
         {/* <Hero/>
         
       <About/>
