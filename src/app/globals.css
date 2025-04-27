@@ -53,6 +53,15 @@ input[type="number"]::-webkit-outer-spin-button {
   background: #42454a;
 }
 
-.no-scroll::-webkit-scrollbar {
+/* .no-scroll::-webkit-scrollbar {
   width: 0px;
+} */
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

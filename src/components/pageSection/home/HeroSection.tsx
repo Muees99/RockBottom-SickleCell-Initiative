@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
         {/* <div className="absolute bottom-5 left-0 right-0 flex justify-center">
         <PiMouseSimpleLight className="w-8 h-8 text-neutral-500" />
       </div> */}
-        <div className="absolute bottom-5 left-0 right-0 flex justify-center pt-4">
+        <div className="absolute bottom-5 left-0 right-0  w-full flex justify-center mt-10">
           <button
             onClick={() => {
               const section = document.getElementById("mission-section");
