@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { outfit, figtree } from "./font";
 import "./globals.css";
-import GotoTop from "@/../Ui/GotoTop";
+import GotoTop from "@/components/Ui/GotoTop";
 import StateContextProvider from "@/../context/StateContext";
 
 export const metadata: Metadata = {
