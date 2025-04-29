@@ -56,7 +56,7 @@ function ImpactSection() {
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
             Our Impact
           </h3>
-          <p className="text-sm font-light leading-[175%] mt-2">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-snug tracking-normal max-w-3xl mt-3">
             Key Programs and Initiatives
           </p>
         </motion.div>

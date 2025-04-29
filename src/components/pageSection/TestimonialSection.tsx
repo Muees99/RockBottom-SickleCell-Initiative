@@ -10,6 +10,7 @@ import User3 from "@/../public/assets/User3.png";
 import User4 from "@/../public/assets/User4.png";
 import User5 from "@/../public/assets/User2.png";
 import User6 from "@/../public/assets/User3.png";
+import { PiMouseSimpleLight } from "react-icons/pi";
 
 function TestimonialSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -101,7 +102,7 @@ function TestimonialSection() {
         {/* Line under heading */}
         <motion.div
           initial={{ width: 0 }}
-          whileInView={{ width: " 80rem "}}
+          whileInView={{ width: " 80rem " }}
           transition={{ duration: 1, ease: "easeInOut" }}
           viewport={{ once: true }}
           className="h-0.5 bg-[#808080] rounded-full mb-8"
@@ -165,6 +166,27 @@ function TestimonialSection() {
               className="absolute top-0 left-0 h-1 bg-white rounded-full transition-all duration-300"
             />
           </div>
+        </div>
+        {/* Mouse Icon placed lower */}
+        <div className="relative w-full flex justify-center mt-10">
+          <motion.button
+            onClick={() => {
+              const section = document.getElementById("invite-section"); // <-- make sure your ID is correct
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/80 shadow-md backdrop-blur hover:bg-[#cdd8ae] transition-all duration-300"
+            animate={{
+              scale: [1, 1.1, 1],
+              opacity: [1, 0.8, 1],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 2,
+              ease: "easeInOut",
+            }}
+          >
+            <PiMouseSimpleLight className="w-6 h-6 sm:w-8 sm:h-8 text-neutral-600" />
+          </motion.button>
         </div>
       </div>
     </div>
