@@ -8,6 +8,8 @@ import MissionSection from "@/components/pageSection/home/MissionSection";
 import ImpactSection from "@/components/pageSection/home/ImpactSection";
 import TestimonialSection from "@/components/pageSection/TestimonialSection";
 import InviteSection from "@/components/pageSection/home/InviteSection";
+import FaqSection from "@/components/pageSection/home/FaqSection";
+import Footer from "@/components/pageSection/home/Footer";
 
 export default function HomeLayout({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -26,9 +28,6 @@ export default function HomeLayout({
 
   if (loading) {
     return (
-      // <div className="flex items-center justify-center h-screen">
-      //   <BiLoaderCircle className="animate-spin  h-24 w-24 text-[#484646]" />
-      // </div>
       <div className="absolute flex flex-col items-center justify-center inset-0">
         <h2 className=" font-bold  text-lg md:text-xl lg:text-2xl xl:text-3xl m-4 ">
           Rock Bottom Sickle Cell Initiative
@@ -54,13 +53,8 @@ export default function HomeLayout({
         <ImpactSection />
         <TestimonialSection />
         <InviteSection />
-        {/* <Hero/>
-        
-      <About/>
-      <Services/>
-      <Reviews/>
-      <News/>
-      <Footer/> */}
+        <FaqSection />
+        <Footer />
       </>
     </CheckInternetLayout>
   );

@@ -66,3 +66,13 @@ export interface ToastProps {
   theme?: ToastTheme;
   type?: ToastVariant;
 }
+
+type FaqItemProps = {
+  item: {
+    question: string;
+    answer: string;
+  };
+  index: number;
+  openIndex: number | null;
+  toggleFAQ: (index: number) => void;
+};
