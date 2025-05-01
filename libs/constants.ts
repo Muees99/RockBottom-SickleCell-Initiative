@@ -22,10 +22,10 @@ export const FOOTER_LINKS: FooterLinkProps = {
     { id: 3, link: "", label: "care" },
   ],
   resources: [
-    { id: 1, link: "", label: "consultation" },
-    { id: 2, link: "", label: "book appointment" },
-    { id: 3, link: "", label: "check up" },
-    { id: 4, link: "", label: "blog" },
+    { id: 1, link: "", label: "blog" },
+    { id: 2, link: "", label: "FAQ" },
+    { id: 3, link: "", label: "support" },
+    // { id: 4, link: "", label: "blog" },
   ],
 //   connect: [
 //     {
