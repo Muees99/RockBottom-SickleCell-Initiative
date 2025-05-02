@@ -1,16 +1,22 @@
-import React from 'react'
-import Navbar from '@/components/Navs/Navbar';
+import React from "react";
+import Navbar from "@/components/Navs/Navbar";
 import Footer from "@/components/pageSection/home/Footer";
+import HeroSection from "@/components/donate/HeroSection";
+import HowDonationsWork from "@/components/donate/HowDonationWork";
 
-function page() {
+// import Image from "next/image"
+
+function Donationpage() {
   return (
-    <div className="w-full py-16 overflow-hidden relative">
-      <div className="max-w-[1440px] lg:px-8 sm:px-[5%] px-[4%]">
-        <Navbar/>
-        <Footer/>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <main className="w-full overflow-x-hidden">
+        <HeroSection/>
+        <HowDonationsWork/>
+      </main>
+      <Footer />
+    </>
   );
 }
 
-export default page
+export default Donationpage;
