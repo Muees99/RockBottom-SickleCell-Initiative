@@ -5,7 +5,6 @@ import HeroSection from "@/components/donate/HeroSection";
 import HowDonationsWork from "@/components/donate/HowDonationWork";
 import DonationPlans from "@/components/donate/DonationPlans";
 
-// import Image from "next/image"
 
 function Donationpage() {
   return (
