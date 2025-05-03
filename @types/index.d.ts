@@ -17,9 +17,9 @@ export type NavLinkProps = {
 // };
 export type FooterLinkProps = {
   company: any;
-  services:any;
+  services: any;
   resources: any;
-//   connect: any;
+  //   connect: any;
   // QuickLinks: any;
   id?: number;
   link: string;
@@ -77,31 +77,19 @@ type FaqItemProps = {
   toggleFAQ: (index: number) => void;
 };
 
-// export interface PaystackOptions {
-//   key: string;
-//   email: string;
-//   amount: number;
-//   currency?: string;
-//   ref?: string;
-//   callback?: () => void;
-//   onClose?: () => void;
-// }
+export interface PaystackOptions {
+  key: string;
+  email: string;
+  amount: number;
+  currency?: string;
+  ref?: string;
+  callback: (response: PaystackResponse) => void;
+  onClose?: () => void;
+  metadata?: Record<string, any>;
+  label?: string;
+}
 
-
- export interface PaystackOptions {
-    key: string;
-    email: string;
-    amount: number;
-    currency?: string;
-    ref?: string;
-    callback: (response: PaystackResponse) => void;
-    onClose?: () => void;
-    metadata?: Record<string, any>;
-    label?: string;
-  }
-
-
- export interface PaystackResponse {
-   reference: string;
-   [key: string]: any;
- }
+export interface PaystackResponse {
+  reference: string;
+  [key: string]: any;
+}
