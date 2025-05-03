@@ -76,3 +76,32 @@ type FaqItemProps = {
   openIndex: number | null;
   toggleFAQ: (index: number) => void;
 };
+
+// export interface PaystackOptions {
+//   key: string;
+//   email: string;
+//   amount: number;
+//   currency?: string;
+//   ref?: string;
+//   callback?: () => void;
+//   onClose?: () => void;
+// }
+
+
+ export interface PaystackOptions {
+    key: string;
+    email: string;
+    amount: number;
+    currency?: string;
+    ref?: string;
+    callback: (response: PaystackResponse) => void;
+    onClose?: () => void;
+    metadata?: Record<string, any>;
+    label?: string;
+  }
+
+
+ export interface PaystackResponse {
+   reference: string;
+   [key: string]: any;
+ }
