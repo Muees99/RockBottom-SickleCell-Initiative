@@ -50,7 +50,6 @@ function InviteSection() {
           </div>
         </div>
         {/* Mouse Icon placed lower */}
-        {/* <div className="absolute bottom-6 left-0 right-0 flex justify-center pt-4"> */}
         <div className="relative w-full flex justify-center mt-10">
           <motion.button
             onClick={() => {
@@ -68,7 +67,7 @@ function InviteSection() {
               ease: "easeInOut",
             }}
           >
-            <PiMouseSimpleLight className="w-6 h-6 sm:w-8 sm:h-8 text-neutral-600"/>
+            <PiMouseSimpleLight className="w-6 h-6 sm:w-8 sm:h-8 text-neutral-600" />
           </motion.button>
         </div>
       </div>
