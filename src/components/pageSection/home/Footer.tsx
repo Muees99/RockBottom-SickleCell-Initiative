@@ -71,17 +71,17 @@ const Footer = () => {
               {
                 icon: <FaSquareFacebook className="text-white text-xl" />,
                 text: "Follow us on Facebook",
-                href: "https://www.facebook.com/profile.php?id=61568320691704&mibextid=LQQJ4d",
+                href: "https://www.facebook.com/",
               },
               {
                 icon: <FaInstagram className="text-white text-xl" />,
                 text: "Follow us on Instagram",
-                href: "https://www.instagram.com/treasurehealth365/",
+                href: "https:///",
               },
               {
                 icon: <FaLinkedin className="text-white text-xl" />,
                 text: "Follow us on LinkedIn",
-                href: "https://www.linkedin.com/in/treasure-health-services-291863337/",
+                href: "https://www.linkedin.com/in/",
               },
             ].map(({ icon, text, href }, i) => (
               <Link

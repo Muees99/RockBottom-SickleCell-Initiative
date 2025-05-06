@@ -7,14 +7,11 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
-// import MobileNav from "../MobileNav";
 import { useStateCtx } from "@/../context/StateContext";
 import useWindowHeight from "@/../hooks/useDimension";
-// import Button from "@/components/Ui/Button";
-// import { CiLogin, CiLogout } from "react-icons/ci";
 import Image from "next/image";
 import RockBottomLogo from "@/../public/assets/RockBottomLogo.png";
-// import Button from "../../../../Ui/Button";
+import MobileNav from "../MobileNav";
 
 const Navbar = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -76,7 +73,6 @@ const Navbar = () => {
                 "text-[white] text-lg capitalize relative font-medium  before:bg-green-100 before:w-[0%] before:h-1 before:absolute before:-bottom-2 before:left-0 before:transition-all before:duration-500",
                 isActive === link.link ? "before:w-full text-gray-200" : "",
                 "hover:text-[#2F7889]"
-                // bg-gray-400
               )}
             >
               <span className="">{link.label}</span>
@@ -86,7 +82,7 @@ const Navbar = () => {
             Donate
           </Button> */}
 
-          <button className=" flex items-center justify-center  px-6 py-3 rounded-full text-white bg-[#2F7889]  ">
+          <button className=" flex items-center justify-center  px-6 py-3 rounded-full text-white bg-[#2F7889] ">
             Donate
           </button>
         </div>
@@ -98,15 +94,10 @@ const Navbar = () => {
         >
           <FaBars className="text-[#ffffff]" />
         </div>
-        {/* <MobileNav /> */}
+        <MobileNav />
       </nav>
     </header>
   );
 };
 
 export default Navbar;
-
-{
-  /* <h1 className="font-heading text-3xl">This uses Figtree</h1>
-<p className="font-body text-base">This uses Outfit</p> */
-}
