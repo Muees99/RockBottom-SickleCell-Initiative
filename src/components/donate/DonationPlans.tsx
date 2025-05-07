@@ -37,6 +37,7 @@ const DonationPlans = () => {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
 
   return (
+    <div id="donateplan">
     <section className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl md:text-4xl font-bold mb-10">
@@ -100,6 +101,7 @@ const DonationPlans = () => {
         onClose={() => setSelectedPlan(null)}
       />
     </section>
+    </div>
   );
 };
 

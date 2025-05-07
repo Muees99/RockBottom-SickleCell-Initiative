@@ -21,7 +21,13 @@ const HeroSection = () => {
               Help us empower individuals and families living with sickle cell
               around the world; your donation makes a difference.
             </p>
-            <button className="  flex items-center justify-center px-6 py-3 rounded-full text-[#000] bg-[#FFF] mt-10">
+            <button
+              onClick={() => {
+                const section = document.getElementById("donateplan"); // <-- make sure  ID is correct
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="flex items-center justify-center px-6 py-3 rounded-full text-[#000] bg-[#FFF] mt-10"
+            >
               Make a Donation
             </button>
           </div>

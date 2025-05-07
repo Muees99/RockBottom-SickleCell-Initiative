@@ -161,7 +161,7 @@ function NoconnectionContent() {
 
 export default function Noconnectionpage() {
   return (
-    <Suspense fallback={<div className="text-center mt-10">Loading...</div>}>
+    <Suspense fallback={<div className=" flex justify-center items-center text-center mt-10">Loading...</div>}>
       <NoconnectionContent />
     </Suspense>
   );

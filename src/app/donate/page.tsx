@@ -12,7 +12,7 @@ import { Suspense } from "react";
 function Donationpage() {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className=" flex justify-center items-center mt-10">Loading...</div>}>
         <Navbar />
         <main className="w-full overflow-x-hidden">
           <HeroSection />
