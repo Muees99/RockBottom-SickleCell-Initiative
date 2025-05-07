@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
               Donate
             </button>
             <button
-              onClick={() => router.push("/auth/signin")}
+              onClick={() => router.push("/")}
               className="flex items-center justify-center text-[#000] hover:text-[#1e515e] text-sm font-medium w-[130px]"
             >
               Learn More <IoIosArrowRoundForward className="ml-1 w-5 h-5" />
