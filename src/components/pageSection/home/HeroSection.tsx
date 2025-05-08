@@ -12,12 +12,14 @@ const HeroSection: React.FC = () => {
   const router = useRouter();
 
   return (
-    <div className="relative w-full  overflow-hidden pt-[120px] min-h-screen ">
+    // <div className="relative w-full  overflow-hidden pt-[120px] min-h-screen ">
+    <div className="relative w-full overflow-hidden pt-[140px] sm:pt-[160px] lg:pt-[180px] min-h-screen">
       <div className="max-w-[1440px] mx-auto lg:px-8 sm:px-[5%] px-[4%]">
         {/* Background Images */}
         <div className="absolute inset-0 -z-10">
           <BackgroundImages />
-          <div className="absolute inset-0 bg-opacity-60"></div>{" "}
+          {/* <div className="absolute inset-0 bg-opacity-60"> */}
+          <div className="absolute inset-0 bg-white/80 sm:bg-white/60 -z-10"></div>{" "}
           {/* Soft overlay */}
         </div>
 
