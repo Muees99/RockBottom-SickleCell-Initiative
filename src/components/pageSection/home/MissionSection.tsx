@@ -71,7 +71,6 @@ function MissionSection() {
 
           {/* Scroll Down Icon */}
           {/* Mouse Icon placed lower */}
-          {/* <div className="absolute bottom-6 left-0 right-0 flex justify-center pt-4"> */}
           <div className="relative w-full flex justify-center mt-10">
             <motion.button
               onClick={() => {
