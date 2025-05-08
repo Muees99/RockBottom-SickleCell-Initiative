@@ -5,7 +5,6 @@ export const NAVLINKS: NavLinkProps[] = [
   { id: 2, link: "about-us", label: "About Us" },
   { id: 3, link: "services", label: "Services" },
   { id: 4, link: "our-programs", label: "Our Programs" },
-  // { id: 5, link: "cart", label: "cart" },
   { id: 5, link: "contact-us", label: "Contact Us" },
 ];
 
@@ -25,23 +24,7 @@ export const FOOTER_LINKS: FooterLinkProps = {
     { id: 1, link: "", label: "blog" },
     { id: 2, link: "", label: "FAQ" },
     { id: 3, link: "", label: "support" },
-    // { id: 4, link: "", label: "blog" },
   ],
-//   connect: [
-//     {
-//       id: 1,
-//       link: "tel:862-373-0693 ; 410-994-6931",
-//       label: " helpline: 862-373-0693 ; 410-994-6931",
-//     },
-//     { id: 2, link: "", label: "partnership" },
-//     {
-//       id: 3,
-//       link: "mailto:treasurehealthservicesllc@gmail.com",
-//       label: "treasurehealthservicesllc@gmail.com",
-//     },
-//     { id: 4, link: "", label: "volunteer" },
-//   ],
   link: "",
   label: "",
-  // QuickLinks: undefined
 };
