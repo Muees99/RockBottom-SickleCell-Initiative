@@ -4,23 +4,11 @@ export type NavLinkProps = {
   link: string;
   label: string;
 };
-// export type FooterLinkProps = {
-//   QuickLinks: any;
-//   resources: any;
-//   company: any;
-//   followus:any;
-//   // legals: any;
-//   // QuickLinks: any;
-//   id?: number;
-//   link: string;
-//   label: string;
-// };
+
 export type FooterLinkProps = {
   company: any;
   services: any;
   resources: any;
-  //   connect: any;
-  // QuickLinks: any;
   id?: number;
   link: string;
   label: string;
