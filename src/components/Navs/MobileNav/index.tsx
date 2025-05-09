@@ -42,15 +42,25 @@ const MobileNav = () => {
   return (
     <>
       {showMobileMenu && (
+        // <div
+        //   className="fixed inset-0 bg-black/50 z-20"
+        //   onClick={handleCloseMenu}
+        // />
         <div
-          className="fixed inset-0 bg-black/50 z-20"
+          className="fixed inset-0 bg-black/50 z-55"
           onClick={handleCloseMenu}
         />
       )}
-      <nav
+      {/* <nav
         className={cn(
           "fixed inset-y-0 right-0 w-80  bg-white/50 backdrop-blur-lg flex flex-col items-center p-6 z-50 transition-transform duration-300",
           showMobileMenu ? "translate-x-0" : " translate-x-full"
+        )}
+      > */}
+      <nav
+        className={cn(
+          "fixed inset-y-0 right-0 w-80 bg-white bg-opacity-80 backdrop-blur-lg shadow-lg flex flex-col items-center p-6 z-[60] transition-transform duration-300",
+          showMobileMenu ? "translate-x-0" : "translate-x-full"
         )}
       >
         <button
