@@ -2,9 +2,10 @@
 import WebLayout from "@/../layout/webLayout";
 import Image from "next/image";
 import NotFountImage  from "../../public/assets/Notfound.png";
+import { Suspense } from "react";
 // import Button  from "../components/Ui/Button";
 
-function Notfoundpage() {
+function NotfoundpageContent() {
   return (
     <WebLayout>
       <div className="w-[90%] max-w-[500px]  translate-y-[5%]  mx-auto z-10">
@@ -43,4 +44,20 @@ function Notfoundpage() {
   );
 }
 
-export default Notfoundpage;
+
+
+
+
+export default function Noconnectionpage() {
+  return (
+    <Suspense
+      fallback={
+        <div className=" flex justify-center items-center text-center mt-10">
+          Loading...
+        </div>
+      }
+    >
+      <NotfoundpageContent />
+    </Suspense>
+  );
+}
