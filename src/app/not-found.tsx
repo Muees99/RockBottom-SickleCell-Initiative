@@ -3,9 +3,13 @@ import WebLayout from "@/../layout/webLayout";
 import Image from "next/image";
 import NotFountImage  from "../../public/assets/Notfound.png";
 import { Suspense } from "react";
+import { useRouter } from "next/navigation";
+
 // import Button  from "../components/Ui/Button";
 
 function NotfoundpageContent() {
+  const router = useRouter();
+
   return (
     <WebLayout>
       <div className="w-[90%] max-w-[500px]  translate-y-[5%]  mx-auto z-10">
@@ -30,11 +34,27 @@ function NotfoundpageContent() {
               >
                 Refresh page
               </Button> */}
-              <button
+              {/* <button
                 className="w-full h-12 mt-6 bg-[#2F7889] text-white rounded-md hover:opacity-90 transition"
                 type="submit"
               >
                 Refresh page
+              </button> */}
+              <button
+                onClick={() => {
+                  if (
+                    document.referrer &&
+                    new URL(document.referrer).origin === window.location.origin
+                  ) {
+                    router.back(); // Go back to previous page if it’s from same origin
+                  } else {
+                    router.push("/"); // Otherwise go to home
+                  }
+                }}
+                className="w-full h-12 mt-6 bg-[#2F7889] text-white rounded-md hover:opacity-90 transition"
+                type="button"
+              >
+                Go back
               </button>
             </div>
           </div>
