@@ -1,6 +1,5 @@
 "use client";
 import { NAVLINKS } from "@/../libs/constants";
-// import Image from "next/image";
 import cn from "@/app/utils/twcx";
 import Link from "next/link";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
