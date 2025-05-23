@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   const router = useRouter();
 
   return (
-    <div className="relative w-full overflow-hidden pt-[140px] sm:pt-[160px] lg:pt-[180px] min-h-screen">
+    <div className="relative w-full overflow-hidden pt-[100px] sm:pt-[160px] lg:pt-[180px] min-h-screen">
       <div className="max-w-[1440px] mx-auto lg:px-8 sm:px-[5%] px-[4%]">
         {/* Background Images */}
         <div className="absolute inset-0 -z-10">
@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Content */}
-        <MaxWidthWrapper className="relative z-10 flex flex-col items-center justify-center text-center gap-6">
+        <MaxWidthWrapper className="relative z-10 flex flex-col items-center justify-center text-center gap-6 mt-1 lg:mt-10">
           <h2 className="text-lg sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-gray-900 max-w-4xl break-words">
             Empowering Lives & Transforming Futures by fighting{" "}
             <span className="bg-[#2F7889] rounded-lg px-2 text-white whitespace-nowrap">
