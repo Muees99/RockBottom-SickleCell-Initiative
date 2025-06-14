@@ -13,6 +13,7 @@ import RockBottomLogo from "@/../public/assets/RockBottomLogo.png";
 import MobileNav from "../MobileNav";
 
 const Navbar = () => {
+  const router = useRouter();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();
   const searchParams = useSearchParams().get("path");
@@ -58,12 +59,12 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center justify-center  gap-x-5 lg:gap-x-7 2xl:gap-x-10 ml-auto">
           {NAVLINKS.map((link) => (
             <Link
-              // href={
-              //   link.link === "home"
-              //     ? "/?path=home"
-              //     : `${link.link}?path=${link.link}`
-              // }
-              href={`#${link.link}`} // Use hash links for on-page navigation
+              href={
+                link.link === "home"
+                  ? "/?path=home"
+                  : `${link.link}?path=${link.link}`
+              }
+              // href={`#${link.link}`} // Use hash links for on-page navigation
               key={link.id}
               onClick={() => {
                 setIsActive(link.link);
@@ -81,7 +82,10 @@ const Navbar = () => {
             Donate
           </Button> */}
 
-          <button className=" flex items-center justify-center  px-6 py-3 rounded-full text-white bg-[#2F7889] ">
+          <button
+            className=" flex items-center justify-center  px-6 py-3 rounded-full text-white bg-[#2F7889]"
+            onClick={() => router.push("/donate")}
+          >
             Donate
           </button>
         </div>

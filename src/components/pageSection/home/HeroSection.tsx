@@ -37,8 +37,8 @@ const HeroSection: React.FC = () => {
           {/* CTA Buttons */}
           <div className="flex flex-row flex-wrap items-center justify-center gap-3 mt-6 w-full max-w-md">
             <button
-              onClick={() => router.push("/donate")}
               className="bg-[#2F7889] hover:bg-[#24606f] text-white text-sm font-medium px-6 py-3 rounded-full transition-all duration-300 w-[130px] text-center"
+              onClick={() => router.push("/donate")}
             >
               Donate
             </button>
