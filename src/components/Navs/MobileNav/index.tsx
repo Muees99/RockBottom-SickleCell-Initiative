@@ -42,10 +42,6 @@ const MobileNav = () => {
   return (
     <>
       {showMobileMenu && (
-        // <div
-        //   className="fixed inset-0 bg-black/50 z-20"
-        //   onClick={handleCloseMenu}
-        // />
         <div
           className="fixed inset-0 bg-black/50 z-55"
           onClick={handleCloseMenu}

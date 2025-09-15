@@ -1,11 +1,9 @@
 "use client";
 import WebLayout from "@/../layout/webLayout";
 import Image from "next/image";
-import NotFountImage  from "../../public/assets/Notfound.png";
+import NotFountImage from "../../public/assets/Notfound.png";
 import { Suspense } from "react";
 import { useRouter } from "next/navigation";
-
-// import Button  from "../components/Ui/Button";
 
 function NotfoundpageContent() {
   const router = useRouter();
@@ -28,18 +26,7 @@ function NotfoundpageContent() {
                 We are sorry, please confirm this is correct page with the right
                 url and refresh the page
               </p>
-              {/* <Button
-                className="w-full h-12 mt-6 bg-[#2F7889] text-white rounded-md hover:opacity-90 transition"
-                type="submit"
-              >
-                Refresh page
-              </Button> */}
-              {/* <button
-                className="w-full h-12 mt-6 bg-[#2F7889] text-white rounded-md hover:opacity-90 transition"
-                type="submit"
-              >
-                Refresh page
-              </button> */}
+
               <button
                 onClick={() => {
                   if (
@@ -63,10 +50,6 @@ function NotfoundpageContent() {
     </WebLayout>
   );
 }
-
-
-
-
 
 export default function Noconnectionpage() {
   return (
