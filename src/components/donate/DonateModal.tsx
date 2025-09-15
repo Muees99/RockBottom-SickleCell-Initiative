@@ -46,13 +46,6 @@ const DonateModal = ({ planName, isOpen, onClose }: DonateModalProps) => {
   const amount = planAmounts[normalizedPlan];
   const displayAmount = displayAmounts[normalizedPlan];
 
-  // const copyToClipboard = async (text: string) => {
-  //   try {
-  //     await navigator.clipboard.writeText(text);
-  //   } catch {
-  //     alert("Failed to copy.");
-  //   }
-  // };
 
   const copyToClipboard = async (text: string) => {
     try {
