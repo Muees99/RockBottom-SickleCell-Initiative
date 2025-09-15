@@ -8,7 +8,6 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { BsX } from "react-icons/bs";
-// import Button from "@/components/Ui/Button";
 
 const MobileNav = () => {
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();
@@ -47,12 +46,7 @@ const MobileNav = () => {
           onClick={handleCloseMenu}
         />
       )}
-      {/* <nav
-        className={cn(
-          "fixed inset-y-0 right-0 w-80  bg-white/50 backdrop-blur-lg flex flex-col items-center p-6 z-50 transition-transform duration-300",
-          showMobileMenu ? "translate-x-0" : " translate-x-full"
-        )}
-      > */}
+
       <nav
         className={cn(
           "fixed inset-y-0 right-0 w-80 bg-white bg-opacity-80 backdrop-blur-lg shadow-lg flex flex-col items-center p-6 z-[60] transition-transform duration-300",
