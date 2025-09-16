@@ -99,9 +99,7 @@ const DonateModal = ({ planName, isOpen, onClose }: DonateModalProps) => {
       } else {
         alert("Failed to initiate Stripe payment.");
       }
-      // } catch (error: any) {
-      //   alert("Stripe error: " + error.message);
-      // }
+      
     } catch (error) {
       if (error instanceof Error) {
         alert("Stripe error: " + error.message);
