@@ -78,9 +78,7 @@ const Navbar = () => {
               <span className="">{link.label}</span>
             </Link>
           ))}
-          {/* <Button className="rounded-full px-6 py-2 max-w-full text-white bg-[#2F7889]">
-            Donate
-          </Button> */}
+          
 
           <button
             className=" flex items-center justify-center  px-6 py-3 rounded-full text-white bg-[#2F7889]"
