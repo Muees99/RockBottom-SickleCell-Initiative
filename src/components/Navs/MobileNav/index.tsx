@@ -64,10 +64,10 @@ const MobileNav = () => {
         <div className="flex flex-col items-start gap-4 mt-8">
           {NAVLINKS.map((link) => (
             <Link
-              //  href={link.link === "home" ? "/?path=home" : `/${link.link}`}     //page navigation
+               href={link.link === "home" ? "/?path=home" : `/${link.link}`}     //page navigation
               // key={link.id}
 
-              href={`#${link.link}`} // Use hash links for on-page navigation
+              // href={`#${link.link}`} // Use hash links for on-page navigation
               key={link.id}
               onClick={() => {
                 setIsActive(link.link);
